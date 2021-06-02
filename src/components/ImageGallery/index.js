@@ -14,6 +14,12 @@ export function ImageGallery({ selectedVariantImageId, images }) {
     );
   }, [selectedVariantImageId, images, setActiveImageThumbnail]);
 
+  React.useEffect(() => {
+    setActiveImageThumbnail(
+      images.find(({ id }) => id === selectedVariantImageId) || images[0]
+    );
+  }, [selectedVariantImageId, images, setActiveImageThumbnail]);
+
   const handleClick = image => {
     setActiveImageThumbnail(image);
   };
