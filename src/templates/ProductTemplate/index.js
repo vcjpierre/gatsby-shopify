@@ -85,7 +85,7 @@ export default function ProductTemplate(props) {
               )}
               {!!selectedVariant && (
                 <>
-                  <Price>$us {selectedVariant.price}</Price>
+                  <Price>$ {selectedVariant.price}</Price>
                   <ProductQuantityAdder 
                     available={selectedVariant.available}
                     variantId={selectedVariant.id}
