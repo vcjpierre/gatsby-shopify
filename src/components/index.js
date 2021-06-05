@@ -8,3 +8,7 @@ export * from './Header';
 export * from './Cart';
 export * from './CartContents';
 export * from './QuantityAdjuster';
+export * from './RemoveLineItem';
+export * from './HomepageCollectionsGrid';
+export * from './FeaturedProducts';
+export * from './ProductsGrid';
