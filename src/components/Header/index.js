@@ -1,11 +1,13 @@
 import React from 'react';
 import { HeaderWrapper } from './styles';
 import { Cart } from '../Cart';
+import { Search } from '../Search';
 
 export function Header() {
   return (
     <HeaderWrapper>     
-      <Cart />
+      <Search />
+      <Cart />      
     </HeaderWrapper>
   );
 }
