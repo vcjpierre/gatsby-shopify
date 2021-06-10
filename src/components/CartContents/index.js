@@ -61,7 +61,7 @@ export function CartContents() {
           {!!checkout?.webUrl && (
             <Button
               onClick={() => {
-                console.log("Go to checkout")
+                window.location.href = checkout.webUrl;
               }}
             >
               Checkout
