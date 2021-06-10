@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-onchange */
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Layout, ProductQuantityAdder, Button } from 'components';
+import { Layout, ProductQuantityAdder, Button, SEO } from 'components';
 import { Grid, SelectWrapper, Price } from './styles';
 import { ImageGallery } from '../../components/ImageGallery';
 import CartContext from 'context/CartContext';
@@ -50,6 +50,10 @@ export default function ProductTemplate(props) {
 
   return (
     <Layout>
+      <SEO
+        description={props.data.shopifyProduct.description}
+        title={props.data.shopifyProduct.title}
+      />
       <Button onClick={() => navigate(-1)}>Back to products</Button>
       <Grid>
         <div>
